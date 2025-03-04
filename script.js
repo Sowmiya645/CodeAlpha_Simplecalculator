@@ -1,4 +1,4 @@
-let history = []; // Array to store history of calculations
+let history = [];
 
 function appendToDisplay(value) {
     const display = document.getElementById('display');
@@ -13,13 +13,13 @@ function clearDisplay() {
 function calculateResult() {
     const display = document.getElementById('display');
     try {
-        const expression = display.value; // Get the current expression
-        const result = eval(expression); // Evaluate the expression
-        display.value = result; // Show the result in the display
-        addToHistory(`${expression} = ${result}`); // Add the full calculation to history
+        const expression = display.value; 
+        const result = eval(expression);
+        display.value = result;
+        addToHistory(`${expression} = ${result}`);
     } catch (error) {
         display.value = 'Error';
-        setTimeout(clearDisplay, 1500); // Clear error after 1.5 seconds
+        setTimeout(clearDisplay, 1500);
     }
 }
 
@@ -30,20 +30,18 @@ function addToHistory(entry) {
 
 function updateHistoryDisplay() {
     const historyList = document.getElementById('historyList');
-    historyList.innerHTML = ''; // Clear current history display
+    historyList.innerHTML = '';
     history.forEach((entry) => {
         const li = document.createElement('li');
-        li.textContent = entry; // Display the full calculation
+        li.textContent = entry;
         historyList.appendChild(li);
     });
 }
 
-// Keyboard support
 document.addEventListener('keydown', function(event) {
     const key = event.key;
     const operators = ['+', '-', '*', '/'];
 
-    // Check if the key is a number or an operator
     if (!isNaN(key) || operators.includes(key)) {
         appendToDisplay(key);
     } else if (key === 'Enter') {
