@@ -3,7 +3,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #2c3e50; /* Dark background */
+    background-color: #2c3e50; 
     font-family: 'Arial', sans-serif;
     margin: 0;
 }
@@ -13,18 +13,18 @@ body {
 }
 
 .title {
-    color: #ecf0f1; /* Light color for the title */
+    color: #ecf0f1;
     margin-bottom: 20px;
     font-size: 36px;
 }
 
 .calculator {
-    background-color: #34495e; /* Darker blue-gray for the calculator */
+    background-color: #34495e;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     padding: 20px;
     width: 320px;
-    margin: 0 auto; /* Center the calculator */
+    margin: 0 auto; 
 }
 
 #display {
@@ -37,8 +37,8 @@ body {
     border-radius: 5px;
     padding: 10px;
     box-sizing: border-box;
-    background-color: #ecf0f1; /* Light gray for the display */
-    color: #2c3e50; /* Dark text for contrast */
+    background-color: #ecf0f1; 
+    color: #2c3e50; 
 }
 
 .buttons {
@@ -52,14 +52,14 @@ button {
     font-size: 18px;
     border: none;
     border-radius: 5px;
-    background-color: #1abc9c; /* Teal background for buttons */
+    background-color: #1abc9c; 
     color: white;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.1s;
 }
 
 button:hover {
-    background-color: #16a085; /* Darker teal on hover */
+    background-color: #16a085; 
 }
 
 button:active {
@@ -69,7 +69,7 @@ button:active {
 .history {
     margin-top: 20px;
     text-align: left;
-    color: #ecf0f1; /* Light color for history text */
+    color: #ecf0f1; 
 }
 
 .history h2 {
